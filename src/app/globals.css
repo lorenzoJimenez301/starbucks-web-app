@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../../.flowbite-react/class-list.json";
 
 @font-face {
   font-family: "Helvetica";
@@ -19,4 +21,9 @@
 @theme {
   --font-helvetica: Helvetica;
   --color-green-star: #00643c;
+}
+
+
+.full-center{
+  @apply flex justify-center items-center;
 }
