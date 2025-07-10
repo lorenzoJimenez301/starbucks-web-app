@@ -5,29 +5,22 @@ export default function Home() {
   return (
     <main>
       <header>
-        <Navbar fluid rounded>
+        <Navbar className="bg-transparent!" fluid>
           <NavbarBrand href="https://flowbite-react.com">
             <img
-              src="/favicon.svg"
-              className="mr-3 h-6 sm:h-9"
+              src="/images/starbucks-icon.svg"
+              className="mr-3 h-14 sm:h-9"
               alt="Flowbite React Logo"
             />
-            <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-              Flowbite React
-            </span>
           </NavbarBrand>
           <div className="flex md:order-2">
-            <Button>Get started</Button>
-            <NavbarToggle />
+            <NavbarToggle className="cursor-pointer" />
           </div>
-          <NavbarCollapse>
-            <NavbarLink href="#" active>
-              Home
-            </NavbarLink>
-            <NavbarLink href="#">About</NavbarLink>
-            <NavbarLink href="#">Services</NavbarLink>
-            <NavbarLink href="#">Pricing</NavbarLink>
-            <NavbarLink href="#">Contact</NavbarLink>
+          <NavbarCollapse className="uppercase">
+            <NavbarLink className="text-green-star! border-none hover:text-white! pl-5" href="#">Menu</NavbarLink>
+            <NavbarLink className="text-green-star! border-none hover:text-white! pl-5" href="#">Rewards</NavbarLink>
+            <NavbarLink className="text-green-star! border-none hover:text-white! pl-5" href="#">Gift Card</NavbarLink>
+            <NavbarLink className="text-green-star! border-none hover:text-white!" href="#"><Button className="cursor-pointer uppercase text-black! hover:text-white! outline-1 outline-black hover:outline-white bg-transparent!" pill>Find Store</Button></NavbarLink>
           </NavbarCollapse>
         </Navbar>
       </header>
