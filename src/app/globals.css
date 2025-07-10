@@ -4,16 +4,24 @@
 
 @font-face {
   font-family: "Helvetica";
-  src: url("/public/fonts/Helvetica-Bold.woff") format("woff2");
-  font-weight: bold;
+  src: url("/fonts/Helvetica Rounded Bold.otf");
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Helvetica";
-  src: url("/public/fonts/Helvetica.woff") format("woff2");
-  font-weight: normal;
+  src: url("/fonts/Helvetica-Bold.woff") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/Helvetica.woff") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -21,9 +29,16 @@
 @theme {
   --font-helvetica: Helvetica;
   --color-green-star: #00643c;
+  --color-orange-star: #df4e24;
 }
 
-
-.full-center{
+.full-center {
   @apply flex justify-center items-center;
+}
+
+.buttonHero {
+  transition: box-shadow 0.2s ease;
+}
+.buttonHero:hover {
+  box-shadow: 3px 5px 0 #003f26;
 }
