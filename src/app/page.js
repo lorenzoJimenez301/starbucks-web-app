@@ -61,7 +61,7 @@ export default function Home() {
             </div>
           </div>
           <article className="w-2/3 ">
-            <Spline  scene="https://prod.spline.design/EFaVT-GXz6rC2xv6/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/EFaVT-GXz6rC2xv6/scene.splinecode" />
           </article>
         </article>
       </section>
