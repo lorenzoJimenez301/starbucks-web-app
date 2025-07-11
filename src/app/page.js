@@ -68,11 +68,11 @@ export default function Home() {
           </article>
         </article>
       </section>
-      <section className="bg-green-star flex-grow w-full">
-        <article className="container m-auto text-white uppercase flex justify-between">
-          <div className="bg-red-700">
-            <div className="w-max">
-              <ul className="flex space-x-5 text-6xl ">
+      <section className="bg-green-star flex-grow">
+        <article className="container m-auto text-white uppercase flex justify-between items-center h-72 w-full">
+          <div className="">
+            <div className="w-max relative">
+              <ul className="flex space-x-5 text-6xl absolute -top-32">
                 <li className="bg-green-star p-4 rounded-full">
                   <BiCoffeeTogo />
                 </li>
@@ -95,17 +95,29 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="bg-blue-600">
-            <div className="w-max">
-              <ul className="flex space-x-5 text-6xl">
-                <li className="bg-green-star p-4 rounded-full">
-                  <BiCoffeeTogo />
+          <div>
+            <div className="bg-blue-600 w-max h-44 relative">
+              <ul className="flex space-x-5 absolute">
+                <li className="w-44 h-44 overflow-hidden">
+                  <img
+                    className="w-full h-full object-cover object-bottom"
+                    src="/images/Photo 1.jpg"
+                  />
+                  New Image
                 </li>
-                <li className="bg-green-star p-4 rounded-full">
-                  <MdDeliveryDining />
+                <li className="w-44 h-44 overflow-hidden">
+                  <img
+                    className="w-full h-full object-cover object-bottom"
+                    src="/images/Photo 2.jpg"
+                  />
+                  New Location
                 </li>
-                <li className="bg-green-star p-4 rounded-full">
-                  <FaHeart />
+                <li className="w-44 h-44 overflow-hidden">
+                  <img
+                    className="w-full h-full object-cover object-bottom"
+                    src="/images/Photo 3.jpg"
+                  />
+                  Same Flavor
                 </li>
               </ul>
             </div>
