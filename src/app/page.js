@@ -9,6 +9,9 @@ import {
 
 import { FaArrowRight } from "react-icons/fa";
 import Spline from "@splinetool/react-spline/next";
+import { BiCoffeeTogo } from "react-icons/bi";
+import { MdDeliveryDining } from "react-icons/md";
+import { FaHeart } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -66,16 +69,46 @@ export default function Home() {
         </article>
       </section>
       <section className="bg-green-star flex-grow w-full">
-        <article className="container m-auto text-white uppercase py-10">
-          <div className="w-max flex flex-col items-start justify-center space-y-8">
-            <p className="w-80">
-              Crave-worthy pairings including our new, best-ever iced coffee.
-              Restrictions apply.
-            </p>
-            <button className="uppercase underline flex justify-center items-center gap-3 cursor-pointer  group">
-              See more{" "}
-              <FaArrowRight className="group-hover:ml-2 transition-all duration-200" />
-            </button>
+        <article className="container m-auto text-white uppercase flex justify-between">
+          <div className="bg-red-700">
+            <div className="w-max">
+              <ul className="flex space-x-5 text-6xl ">
+                <li className="bg-green-star p-4 rounded-full">
+                  <BiCoffeeTogo />
+                </li>
+                <li className="bg-green-star p-4 rounded-full">
+                  <MdDeliveryDining />
+                </li>
+                <li className="bg-green-star p-4 rounded-full">
+                  <FaHeart />
+                </li>
+              </ul>
+            </div>
+            <div className="w-max flex flex-col items-start justify-center space-y-8">
+              <p className="w-80">
+                Crave-worthy pairings including our new, best-ever iced coffee.
+                Restrictions apply.
+              </p>
+              <button className="uppercase underline flex justify-center items-center gap-3 cursor-pointer  group">
+                See more{" "}
+                <FaArrowRight className="group-hover:ml-2 transition-all duration-200" />
+              </button>
+            </div>
+          </div>
+          <div className="bg-blue-600">
+            <div className="w-max">
+              <ul className="flex space-x-5 text-6xl">
+                <li className="bg-green-star p-4 rounded-full">
+                  <BiCoffeeTogo />
+                </li>
+                <li className="bg-green-star p-4 rounded-full">
+                  <MdDeliveryDining />
+                </li>
+                <li className="bg-green-star p-4 rounded-full">
+                  <FaHeart />
+                </li>
+              </ul>
+            </div>
           </div>
         </article>
       </section>
