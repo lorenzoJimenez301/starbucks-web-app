@@ -8,12 +8,13 @@ import {
 } from "flowbite-react";
 
 import { FaArrowRight } from "react-icons/fa";
+import Spline from "@splinetool/react-spline/next";
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
-      <section className="container m-auto font-normal">
-        <article className="flex flex-col sm:flex-row w-full ">
+      <section className="container m-auto font-normal h-[45rem]">
+        <article className="flex flex-col sm:flex-row w-full h-full">
           <div className=" w-2/3">
             <header>
               <Navbar className="bg-transparent! sm:p-8 w-max" fluid>
@@ -29,19 +30,19 @@ export default function Home() {
                 </div>
                 <NavbarCollapse className="uppercase items-center sm:ml-14">
                   <NavbarLink
-                    className="text-green-star! border-none hover:text-white! font-bold!"
+                    className="text-green-star! border-none textNav font-bold!"
                     href="#"
                   >
                     Menu
                   </NavbarLink>
                   <NavbarLink
-                    className="text-green-star! border-none hover:text-white! font-bold!"
+                    className="text-green-star! border-none textNav font-bold!"
                     href="#"
                   >
                     Rewards
                   </NavbarLink>
                   <NavbarLink
-                    className="text-green-star! border-none hover:text-white! font-bold!"
+                    className="text-green-star! border-none textNav font-bold!"
                     href="#"
                   >
                     Gift Card
@@ -59,8 +60,8 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <article className="w-2/3">
-            <img className="w-max" src="/images/descarga.jpg" />
+          <article className="w-2/3 ">
+            <Spline  scene="https://prod.spline.design/EFaVT-GXz6rC2xv6/scene.splinecode" />
           </article>
         </article>
       </section>

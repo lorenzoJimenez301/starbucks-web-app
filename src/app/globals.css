@@ -42,3 +42,10 @@
 .buttonHero:hover {
   box-shadow: 3px 5px 0 #003f26;
 }
+
+.textNav {
+  transition: box-shadow 0.2s ease;
+}
+.textNav:hover {
+  text-shadow: 0.5px 0.5px 0 #00c274;
+}
