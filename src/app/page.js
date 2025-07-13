@@ -12,23 +12,26 @@ import Spline from "@splinetool/react-spline/next";
 import { BiCoffeeTogo } from "react-icons/bi";
 import { MdDeliveryDining } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="flex flex-col min-w-sm">
-      <section className="container m-auto">
+      <section className="md:container m-auto w-full">
         <article className="flex flex-col md:flex-row justify-between bg-[url('/images/background.jpg')] bg-cover md:bg-none h-[40rem] sm:h-[45rem]">
           <div className="h-full w-full bg-black/60 md:bg-white">
             <header>
               <Navbar
-                className="p-5 sm:p-8 w-full md:w-max bg-green-star! md:bg-transparent!"
+                className="py-5 sm:py-8 w-full md:w-max bg-green-star! md:bg-transparent!"
                 fluid
               >
                 <NavbarBrand href="https://flowbite-react.com">
-                  <img
+                  <Image
+                    width={64}
+                    height={64}
                     src="/images/starbucks-icon.svg"
                     className="mr-3 h-14 sm:h-16"
-                    alt="Flowbite React Logo"
+                    alt="Starbucks logo"
                   />
                 </NavbarBrand>
                 <div className="flex md:order-2">
@@ -79,8 +82,12 @@ export default function Home() {
             <div className="h-full flex flex-col items-center md:items-start md:justify-start justify-center text-white md:text-black md:pt-36 min-w-max">
               <div className="flex flex-col gap-5 justify-center items-start font-extrabold md:mb-10 ">
                 <div>
-                  <h1 className="text-5xl sm:text-8xl">Coffe Time</h1>
-                  <h2 className="text-5xl sm:text-8xl">And More...</h2>
+                  <h1 className="text-5xl md:text-7xl lg:text-8xl">
+                    Coffe Time
+                  </h1>
+                  <h2 className="text-5xl md:text-7xl lg:text-8xl">
+                    And More...
+                  </h2>
                 </div>
                 <button className="bg-green-star sm:py-2 sm:px-5 rounded-full px-1 py-2 w-24 sm:w-44 cursor-pointer text-white buttonHero z-20 relative">
                   Drink
@@ -97,7 +104,7 @@ export default function Home() {
         <article className="container m-auto text-white uppercase flex flex-col sm:flex-row justify-between items-center h-max sm:h-72 w-full px-32 md:px-0  gap-32 sm:gap-0">
           <div>
             <div className="w-max relative">
-              <ul className="sm:flex space-x-5 text-5xl absolute hidden -top-32">
+              <ul className="sm:flex space-x-5 text-5xl absolute hidden -top-52">
                 <li className="bg-green-star p-4 rounded-full">
                   <BiCoffeeTogo />
                 </li>
@@ -125,7 +132,10 @@ export default function Home() {
               <ul className="flex flex-col sm:flex-row space-x-5 font-bold">
                 <li className="flex flex-col items-center space-y-5">
                   <div className="w-44 h-max overflow-hidden rounded-2xl">
-                    <img
+                    <Image
+                      alt="Starbucks photos random"
+                      width={500}
+                      height={500}
                       className="w-full h-44 object-cover object-bottom hover:scale-110 transition duration-300"
                       src="/images/Photo 1.jpg"
                     />
@@ -134,7 +144,10 @@ export default function Home() {
                 </li>
                 <li className="w-44 h-max overflow-hidden flex flex-col items-center space-y-5">
                   <div className="w-44 h-max overflow-hidden rounded-2xl">
-                    <img
+                    <Image
+                      alt="Starbucks photos random"
+                      width={500}
+                      height={500}
                       className="w-full h-44 object-cover object-bottom rounded-2xl hover:scale-110 transition duration-300"
                       src="/images/Photo 2.jpg"
                     />
@@ -143,7 +156,10 @@ export default function Home() {
                 </li>
                 <li className="w-44 h-max overflow-hidden flex flex-col items-center space-y-5">
                   <div className="w-44 h-max overflow-hidden rounded-2xl">
-                    <img
+                    <Image
+                      alt="Starbucks photos random"
+                      width={500}
+                      height={500}
                       className="w-full h-44 object-cover object-bottom rounded-2xl hover:scale-110 transition duration-300"
                       src="/images/Photo 3.jpg"
                     />
